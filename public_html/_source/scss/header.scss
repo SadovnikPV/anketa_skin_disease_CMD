@@ -1,0 +1,46 @@
+.header__container {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.header__content {
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #e7e7e7;
+    @media (max-width: 992px) {
+        border: none;
+    }
+}
+.header__content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 992px) {
+        font-size: 26px;
+    }
+}
+.header__logo-institute-img {
+    height: 80px;
+    margin: 0 25px 0 5px;
+    @media (max-width: 576px) {
+        height: 60px;
+        margin-right: 15px;
+    }
+    @media (max-width: 480px) {
+        height: 60px;
+        margin-right: 10px;
+    }
+}
+.header__logo-institute-title {
+    @include font-style-mix("DINpro", 28px, 700, 1.33, $color_logo);
+    @media (max-width: 992px) {
+        font-size: 26px;
+    }
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
+    @media (max-width: 576px) {
+        font-size: 20px;
+    }
+    @media (max-width: 480px) {
+        font-size: 18px;
+    }
+}

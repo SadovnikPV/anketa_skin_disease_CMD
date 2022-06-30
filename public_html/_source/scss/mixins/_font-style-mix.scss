@@ -1,0 +1,10 @@
+// ----------------------------- Миксин задания параметров шрифта -------------------------------------
+// -------- Входные параметры: (семейство, размер шрифта, ширина, межстрочный интервал, цвет) ---------
+
+@mixin font-style-mix ($family, $size, $weight, $lh, $color) {
+    font-family: $family,sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lh;
+    color: $color;
+}

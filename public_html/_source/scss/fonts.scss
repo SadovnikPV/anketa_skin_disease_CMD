@@ -1,0 +1,32 @@
+// ------------------------- Подключение шрифтов -----------------------------
+
+@font-face {
+    font-family: 'DINPro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('DINPro-Regular'),
+    local('DINPro'),
+    url(../fonts/DINPro-Regular.woff) format("woff2"),
+    url(../fonts/DINPro-Regular.woff) format("woff"),
+    url(../fonts/DINPro-Regular.ttf) format("ttf");
+}
+@font-face {
+    font-family: 'DINPro';
+    font-style: normal;
+    font-weight: 500;
+    src: local('DINPro-Medium'),
+    local('DINPro Medium'),
+    url(../fonts/DINPro-Medium.woff) format("woff2"),
+    url(../fonts/DINPro-Medium.woff) format("woff"),
+    url(../fonts/DINPro-Medium.ttf) format("ttf");
+}
+@font-face {
+    font-family: 'DINPro';
+    font-style: normal;
+    font-weight: 700;
+    src: local('DINPro-Bold'),
+    local('DINPro Bold'),
+    url(../fonts/DINPro-Bold.woff2) format("woff"),
+    url(../fonts/DINPro-Bold.woff) format("woff"),
+    url(../fonts/DINPro-Bold.ttf) format("ttf");
+}

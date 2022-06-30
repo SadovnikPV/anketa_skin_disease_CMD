@@ -1,0 +1,136 @@
+// ----------------------------------- Основная анкета ---------------------------------------
+
+.questionnaire__form {
+    .form__title {
+        text-align: center;
+        @include font-style-mix("DINpro", 24px, 700, 1.5, $color_primary_black);
+    }
+    .form__input-label {
+        @include font-style-mix("DINpro", 16px, 500, 1.5, $color_primary_black);
+    }
+    .form__subtitle {
+        text-align: center;
+        @include font-style-mix("DINpro", 22px, 700, 1.5, $color_primary_black);
+        text-decoration: underline;
+        margin: 15px 0 0 0;
+    }
+    .form__table {
+        border: 1px solid $color_primary_black;
+        border-radius: 6px;
+        margin: 30px 0 0 0;
+        ul {
+            margin: 0;
+            li:nth-child(even) {
+                background-color: #DDDDDD;
+            }
+        }
+
+    }
+    .form__table-row {
+        @include font-style-mix("DINpro", 16px, 400, 1.33, $color_primary_black);
+        display: flex;
+        flex-direction: row;
+    }
+    .form__table-header {
+        @include font-style-mix("DINpro", 16px, 500, 1.33, $color_primary_white);
+        background-color: $color_logo;
+        .form__table-cell-question,
+        .form__table-cell-answer {
+            text-align: center;
+            color: $color_primary_white;
+        }
+    }
+    .form__table-cell-question {
+        width: 65%;
+        padding: 10px;
+    }
+    .form__table-cell-answer {
+        @include font-style-mix("DINpro", 16px, 500, 1.33, $color_primary_black);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        width: 35%;
+        padding: 10px;
+        margin: 0;
+        label {
+            display: flex;
+            margin: 0 10px 0 0;
+        }
+        input {
+            width: 20px;
+            height: 20px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        div {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    .form__table-cell-checkbox {
+        padding-right: 70px;
+        input {
+            &:after {
+                content: 'Выбрать';
+                @include font-style-mix("DINpro", 16px, 500, 1.33, $color_primary_black);
+                float: left;
+                position: relative;
+                left: 27px;
+            }
+        }
+    }
+    .form__table-cell-radio {
+        input {
+            width: 15px;
+            height: 15px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        label {
+            display: flex;
+            align-items: center;
+            margin: 0 15px 0 0;
+            &:hover {
+                cursor: pointer;
+            }
+            input {
+                margin: 0 5px 0 0;
+            }
+        }
+    }
+
+    .form-group {
+        margin: 0;
+    }
+    .questionnaire__submit-wrap {
+        text-align: center;
+        margin: 15px 0 0 0;
+    }
+    .questionnaire__submit-btn {
+        @include font-style-mix("DINpro", 16px, 500, 1.33, $color_primary_white);
+        background-color: $color_primary_orange;
+        border: none;
+        border-radius: 6px;
+        padding: 10px 25px;
+        &:hover {
+            transition: all .3s ease-in-out;
+            background-color: $color_orange_button_hover;
+        }
+    }
+}
+
+// ----------------------------------- Модальное окно ---------------------------------------
+
+.modal__container {
+    
+}
+.modal__btn-close {
+
+}
+
+
+
+
