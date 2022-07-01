@@ -15,6 +15,7 @@ class QuestionnaireForm extends Model
     public $patient_question;
     public $symptom_value;
     public $doctor_question;
+    public $visual_scale;
 
 
     /**
@@ -35,6 +36,7 @@ class QuestionnaireForm extends Model
             'patient_question' => '',
             'symptom_value' => '',
             'doctor_question' => '',
+            'visual_scale' => '',
         ];
     }
 }

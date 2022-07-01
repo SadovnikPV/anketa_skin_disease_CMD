@@ -32,6 +32,9 @@ $this->title = 'Анкета диагностики наличия кожног�
                 <div class="form__table-cell-answer form__table-cell-checkbox"><?= $form->field($model, 'patient_question')->checkbox() ?></div>
             </li>
             <li class="form__table-row">
+                <div class="form__table-cell-question">Знаете ли Вы о наличии заболеваний кожи у ближайших родственников?</div>
+            </li>
+            <li class="form__table-row">
                 <div class="form__table-cell-question">Родители</div>
                 <div class="form__table-cell-answer form__table-cell-checkbox"><?= $form->field($model, 'patient_question')->checkbox() ?></div>
             </li>
@@ -95,6 +98,14 @@ $this->title = 'Анкета диагностики наличия кожног�
         </ul>
     </div>
 
+    <div class="form__subtitle-2">
+        ВИЗУАЛЬНО АНАЛОГОВАЯ ШКАЛА (ВАШ) для оценки жалоб
+    </div>
+    <div class="form__visual-scale-container"><?= $form->field($model, "visual_scale")->radioList(
+                ['0' => 0, '1' => 1, '2' => 2, '3' => 3, '4' => 4, '5' => 5, '6' => 6, '7' => 7, '8' => 8, '9' => 9, '10' => 10]) ?>
+    </div>
+
+
     <!-- Modal -->
     <div class="modal fade modal__container" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -105,11 +116,11 @@ $this->title = 'Анкета диагностики наличия кожног�
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div id="modal__body" class="modal-body modal__body">
                     ...
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary modal__btn-close" data-dismiss="modal">Close</button>
+                <div class="modal__footer">
+                    <button type="button" class="btn btn-secondary modal__btn-close" data-dismiss="modal">Закрыть</button>
                 </div>
             </div>
         </div>

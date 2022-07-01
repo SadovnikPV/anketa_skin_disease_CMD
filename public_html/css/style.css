@@ -185,11 +185,12 @@ footer {
 .questionnaire__form .form__subtitle {
   text-align: center;
   font-family: "DINpro", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   text-decoration: underline;
+  text-transform: uppercase;
   margin: 15px 0 0 0;
 }
 .questionnaire__form .form__table {
@@ -334,6 +335,73 @@ footer {
   padding: 10px 25px;
 }
 .questionnaire__form .questionnaire__submit-btn:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #c63a3a;
+}
+.questionnaire__form .form__subtitle-2 {
+  font-family: "DINpro", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.33;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px 0 10px 0;
+}
+.questionnaire__form .form__visual-scale-container {
+  font-family: "DINpro", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.33;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #DDDDDD;
+  border-radius: 5px;
+}
+.questionnaire__form .form__visual-scale-container input {
+  margin: 0 0 0 15px;
+}
+
+.modal__body {
+  font-family: "DINpro", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.33;
+  color: #000000;
+}
+
+.modal__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+.modal__btn-close {
+  font-family: "DINpro", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.33;
+  color: #FFFFFF;
+  background-color: #e87722;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 25px;
+}
+.modal__btn-close:hover {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #c63a3a;

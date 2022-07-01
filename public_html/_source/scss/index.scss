@@ -10,8 +10,9 @@
     }
     .form__subtitle {
         text-align: center;
-        @include font-style-mix("DINpro", 22px, 700, 1.5, $color_primary_black);
+        @include font-style-mix("DINpro", 20px, 700, 1.5, $color_primary_black);
         text-decoration: underline;
+        text-transform: uppercase;
         margin: 15px 0 0 0;
     }
     .form__table {
@@ -120,15 +121,47 @@
             background-color: $color_orange_button_hover;
         }
     }
+    .form__subtitle-2 {
+        @include font-style-mix("DINpro", 20px, 700, 1.33, $color_primary_black);
+        display: flex;
+        justify-content: center;
+        margin: 30px 0 10px 0;
+    }
+    .form__visual-scale-container {
+        @include font-style-mix("DINpro", 18px, 500, 1.33, $color_primary_black);
+        display: flex;
+        justify-content: center;
+        background-color: #DDDDDD;
+        border-radius: 5px;
+        input {
+            margin: 0 0 0 15px;
+        }
+    }
 }
 
 // ----------------------------------- Модальное окно ---------------------------------------
 
 .modal__container {
-    
+
+}
+.modal__body {
+    @include font-style-mix("DINpro", 16px, 400, 1.33, $color_primary_black);
+}
+.modal__footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 .modal__btn-close {
-
+    @include font-style-mix("DINpro", 16px, 500, 1.33, $color_primary_white);
+    background-color: $color_primary_orange;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 25px;
+    &:hover {
+        transition: all .3s ease-in-out;
+        background-color: $color_orange_button_hover;
+    }
 }
 
 
