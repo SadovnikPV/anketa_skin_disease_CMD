@@ -24,7 +24,6 @@ class QuestionnaireForm extends Model
     public function rules()
     {
         return [
-            [['date', 'med_history_number'], 'required'],
         ];
     }
 

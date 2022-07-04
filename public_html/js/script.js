@@ -15,11 +15,9 @@ function questionnaireSubmit() {
     else if (sum >= 1 && sum <= 3) conclusion = 'Легкое течение';
     else if (sum >= 4 && sum <= 6) conclusion = 'Умеренное течение';
     else if (sum > 6) conclusion = 'Сильное течение';
+
     let resultModal = document.getElementById('modal__body');
     resultModal.innerText = conclusion;
-    console.log(sum);
 
-    let options = [];
-    console.log($('#exampleModalCenter'));
     $('#exampleModalCenter').modal();
 }
